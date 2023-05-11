@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/tab.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/loader.css">
-	<script src="resources/js/fulltab.js"></script>
+	<!-- <script src="resources/js/fulltab.js"></script> -->
 	<!-- icons -->
 	<script src="https://kit.fontawesome.com/8a62195d8d.js" crossorigin="anonymous"></script>
 	</head>
@@ -26,46 +26,50 @@
 			<div class="hero-text">
 				<h1><center><center></h1>
 				</div>
+				
 		</div>
 		<div class="row">
 			<div class="col-lg-3"></div>
 					<div class="col-lg-2">
 							<div class="card">
 							<center>
-				<div class="card-header bg-dark text-dark"><img src="resources/img/avatar-1.png"></div>
-				<div class="card-body fa-solid fa-user">Carlo Cruz</div>
+				<div class="card-header bg-light text-dark" id="avatar"><img src="resources/img/avatar-2.png"></div>
+				<div class="card-body">Carlo Cruz</div>
 				<div class="card-body">QA/Freelance Developer</div><hr>
 				<div class="card-body">carlo.cruz0215@gmail.com</div>
-				<div class="card-body">carlo.cruz0215@gmail.com</div>	
+				<div class="card-body">09094922611</div>
+				
+					
 							</center>
 				</div>
 			</div>
 			<div class="col-lg-5">
 				<div class="card">
-						<div class="tab">
-							  <button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
-							  <button class="tablinks" onclick="openCity(event, 'Resume')" >Resume</button>
-							  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
-							 <button class="tablinks" onclick="openCity(event, 'Portfolio')">Portfolio</button>
-										</div>
+					<div class="tab">
+						<button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
+						<button class="tablinks" onclick="openCity(event, 'Resume')">Resume</button>
+						<button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+						<button class="tablinks" onclick="openCity(event, 'Portfolio')">Portfolio</button>
 
-													<div id="About" class="tabcontent">
-													  <h3>About me</h3>
-													  <p> Hi, I am Carlo Cruz, currently working as a QA for WideOut AQA 
-														and sometimes as a freelance web developer. </p>
-
-													<div id="Resume" class="tabcontent">
-													  <h3>Resume</h3>
-													  <p>itutuloy mamaya.</p> 
-													</div>
-													<div id="Portfolio" class="tabcontent">
-													  <h3>Portfolio</h3>
-													  <p>itutuloy mamayaa.</p> 
-													</div>	
-													<div id="Contact" class="tabcontent">
-													  <h3>Contact</h3>
-													  <p>itutuloy mamaya.</p>
-													</div>
+					  </div>
+					  
+					  <div id="About" class="tabcontent">
+						<h3>Hi</h3>
+						<p><span class="emojis">👋</span></p>
+					  </div>
+					  
+					  <div id="Resume" class="tabcontent">
+						<h3>Hi</h3>
+						<p></p> 
+					  </div>
+					  <div id="Contact" class="tabcontent">
+						<h3>Hi</h3>
+						<p></p> 
+					  </div>
+					  <div id="Portfolio" class="tabcontent">
+						<h3>Portfolio</h3>
+						<p></p>
+					  </div>
 <!-- 					<div class="navbar">	
 				<ul>
 				  <butt><a href="">About</a></li>
@@ -96,7 +100,7 @@
 			});
 		});
 
-//tabs
+
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -110,9 +114,15 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
 	</script>
+
+	
+<!-- //tabs -->
+
 
 <div class="loader"></div>
 </body>

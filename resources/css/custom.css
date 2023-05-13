@@ -3,15 +3,23 @@
   padding: 0;
   font-family: "Source Code Pro", monospace;
 }
+.container-fluid{
+  margin-top:100px;
+}
+.wrapper{
+  position:inherit;
+}
+
 .card{
   background-color: hsl(49 37% 94%);
+ 
 }
 .card-header img{
   margin-top: auto;
   /* height: 22vh;
   width: 10vw; */
    animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite ; 
-  margin-left: 50px;
+  margin-left: 40px;
   }
 
 .card-footer a{
@@ -165,10 +173,14 @@ hr{
 
 
 
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
+@media screen and (max-width: 640px) {
+  .wrapper {
+    display: none;
   }
 }
+@media only screen and (max-width: 640px) {
+  .timeline-area h3,h4,h5{
+    font-size: ;
 
+  }
+}

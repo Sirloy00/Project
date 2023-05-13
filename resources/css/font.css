@@ -8,9 +8,9 @@
     margin: 0;
     font-family: "Source Sans Pro", sans-serif;
     min-height: auto;
-    display: grid;
+    display: flex;
     place-content: left;
-    text-align: center;
+    /* text-align: center; */
     background: var(--bg-color);
   }
   

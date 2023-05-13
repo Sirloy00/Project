@@ -1,13 +1,31 @@
 *{
 	margin: 0;
   padding: 0;
+  font-family: "Source Code Pro", monospace;
 }
-
+.card{
+  background-color: hsl(49 37% 94%);
+}
 .card-header img{
   margin-top: auto;
   /* height: 22vh;
   width: 10vw; */
    animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite ; 
+  margin-left: 50px;
+  }
+
+.card-footer a{
+  font-size: 100%;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+.card-footer a i{
+  margin-right: 12px;
+  margin-top: 2px;
+}
+.icon{
+  margin-top: 20px;
 }
 .emoji{
   display: flex;

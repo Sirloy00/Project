@@ -7,38 +7,45 @@
   body .content {
     margin: 0;
     font-family: "Source Sans Pro", sans-serif;
-    min-height: 100vh;
+    min-height: auto;
     display: grid;
     place-content: left;
     text-align: center;
     background: var(--bg-color);
   }
   
-  h1 {
-    font-size: clamp(1rem, 2vw + 1rem, 2rem);
-    position: relative;
+h1{
+    font-size: clamp(1rem, 1vw + 1rem, 1rem);
+    position: auto;
     font-family: "Source Code Pro", monospace;
     position: relative;
     width: max-content;
+    /* animation: slide 10s steps(2); */
   }
   
-  h1::before,
-  h1::after {
+ h1::before,
+h1::after {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+   
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
   }
   
-  h1::before {
+   h1::before {
     background: var(--bg-color);
     animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards;
   }
   
-  h1::after {
+   h1::after {
     width: 0.125em;
     background: black;
     animation: typewriter var(--typewriterSpeed)
@@ -48,11 +55,12 @@
   
   .subtitle {
     color: hsl(0 0% 0% / 0.7);
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+    position: relative;
   }
   
   @keyframes typewriter {
@@ -70,7 +78,7 @@
   @keyframes fadeInUp {
     to {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateY(1000);
     }
   }
   
@@ -85,4 +93,5 @@
       color: teal;
     }
   }
-  
+
+
